@@ -380,8 +380,8 @@ function getSine(n) {
  * 255, 16 => 'ff'
  * 2, 2    => '10'
  */
-function numberToStringInBase(num, b) {
-  return num.toString(b);
+function numberToStringInBase(number, base) {
+  return number.toString(base);
 }
 
 /**
@@ -394,8 +394,8 @@ function numberToStringInBase(num, b) {
  * @example:
  * 12345, 2    => '1.23e+4'
  */
-function toExponential(n, f) {
-  return parseFloat(n).toExponential(f);
+function toExponential(number, fractionDigits) {
+  return parseFloat(number).toExponential(fractionDigits);
 }
 
 /**
@@ -409,8 +409,8 @@ function toExponential(n, f) {
  * 12345, 2    => '12345.00'
  * 12.345, 1   => '12.3'
  */
-function toFixed(n, f) {
-  return n.toFixed(f);
+function toFixed(number, fractionDigits) {
+  return number.toFixed(fractionDigits);
 }
 
 /**
